@@ -2,25 +2,50 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: #ffffff;
+  --color-on-background: #1a1a1a;
+  --color-on-surface: #1a1a1a;
+  --color-on-surface-variant: #4a4a4a;
+  --color-primary: #004ce1;
+  --color-primary-dim: #0042c6;
+  --color-primary-container: #809bff;
+  --color-on-primary: #f2f2ff;
+  --color-on-primary-fixed: #000000;
+  --color-secondary: #006a28;
+  --color-secondary-dim: #005d22;
+  --color-secondary-fixed: #5cfd80;
+  --color-outline: #757778;
+  --color-outline-variant: #abadae;
+  --color-surface: #f8f8f8;
+  --color-surface-bright: #fafafa;
+  --color-surface-container: #ececec;
+  --color-surface-container-low: #f3f3f3;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #e5e5e5;
+  --font-family-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-family-headline: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-family-body: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-family-label: var(--font-label), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Graph paper: thin light-gray lines on white (reference layout) */
+.graph-paper-grid {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.055) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.ambient-shadow {
+  box-shadow: 0 20px 40px rgba(44, 47, 48, 0.08);
 }
