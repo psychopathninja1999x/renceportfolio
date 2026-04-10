@@ -1,5 +1,6 @@
 import { HeroCollage } from "./components/HeroCollage";
 import { KukiBrandingSpreads } from "./components/KukiBrandingSpreads";
+import { interBranding } from "./fonts";
 
 export default function Home() {
   return (
@@ -43,12 +44,15 @@ export default function Home() {
         <HeroCollage />
       </div>
 
-      <section id="branding" className="scroll-mt-28">
+      <section
+        id="branding"
+        className={`scroll-mt-28 ${interBranding.className}`}
+      >
         <header className="mx-auto max-w-3xl px-6 pb-6 pt-16 text-center sm:px-8 sm:pt-20">
-          <h1 className="font-sans text-4xl font-bold lowercase tracking-tight text-neutral-900 sm:text-5xl">
+          <h1 className="text-4xl font-bold lowercase tracking-tight text-neutral-900 sm:text-5xl">
             branding.
           </h1>
-          <p className="mx-auto mt-6 max-w-xl font-sans text-base font-normal leading-relaxed text-neutral-700 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-xl text-base font-light leading-relaxed text-neutral-700 sm:text-lg">
             Turning brand values into visual stories. Every brand has a soul. I
             translate that unique personality into a visual language—from the first
             sketch of a logo to the final texture of a brand pattern.
