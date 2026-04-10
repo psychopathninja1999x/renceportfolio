@@ -38,8 +38,8 @@ const LAYERS_01: Layer[] = [
     alt: "Open blue notebook spread",
     className: "inset-0 h-full w-full",
     z: 0,
-    w: 1481,
-    h: 1075,
+    w: 1451,
+    h: 1031,
     isNotebook: true,
   },
   {
@@ -285,10 +285,9 @@ type PageConfig = {
 const PAGES: PageConfig[] = [
   {
     assetDir: DIR_STATE_01,
-    notebookAssetDir: DIR_STATE_02,
     layers: LAYERS_01,
-    aspectW: 1481,
-    aspectH: 1075,
+    aspectW: 1451,
+    aspectH: 1031,
     ariaLabel: "Kuki branding scrapbook on a blue notebook",
   },
   {
